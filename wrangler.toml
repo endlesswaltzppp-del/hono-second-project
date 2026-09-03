@@ -1,0 +1,10 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "hono-second-project"
+compatibility_date = "2024-04-01"
+pages_build_output_dir = ".vercel/output" # (環境によって異なりますが、そのままでOK)
+
+# ↓ここから下が「D1（データベース）」の配管です
+[[d1_databases]]
+binding = "DB"
+database_name = "hono-second-db"
+database_id = "2de852b2-914c-49ef-80e2-33e5abf1b919"
